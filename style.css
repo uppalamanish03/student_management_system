@@ -1,0 +1,102 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{ 
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+.login-page{
+  min-height: 100vh;
+  background-image: url("./cvr.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.nav a:hover{
+  color: blue;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.login-card{
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 28px;
+  border: 1px solid rgba(0,0,0,0.65);
+  padding: 22px 28px;
+  background: rgba(255,255,255,0.85);
+  backdrop-filter: blur(3px);
+  border-radius: 12px;
+}
+
+.login-card h1{
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.login-card form{
+  padding: 10px 0;
+}
+
+.login-card label{
+  font-weight: 700;
+}
+
+.login-card input[type="text"],
+.login-card input[type="password"]{
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,0.35);
+  border-radius: 8px;
+  outline: none;
+}
+
+.login-card input[type="text"]:focus,
+.login-card input[type="password"]:focus{
+  border-color: #1e66ff;
+  box-shadow: 0 0 0 3px rgba(30, 102, 255, 0.15);
+}
+
+.login-card .login{
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-card input[type="submit"]{
+  background: #1e66ff;
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.login-card input[type="submit"]:hover{
+  background: #1557cc;
+}
+
+@media (max-width: 480px){
+  .login-card{
+    margin-top: 18px;
+    padding: 18px 18px;
+    border-radius: 10px;
+  }
+}
+
