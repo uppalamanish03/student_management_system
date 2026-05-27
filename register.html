@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .form{
+            align-items: center;
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 20px;
+            border: 1px solid black;
+            padding: 0 50px;
+        }
+        form{
+            padding: 20px 0;
+        }
+        h1{
+            text-align: center;
+        }
+        .nav{
+            width: 100%;
+            background-color:bisque;
+            padding: 10px 0;
+            text-align: center;
+            text-decoration: none;
+        }
+        a :hover{
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <a href="login.html">home</a>
+        <a href="login.html">login</a>&nbsp;
+        <a href="register.html">Register</a>&nbsp;
+    </div>
+    <div class="form">
+    <h1>Register</h1>
+    <form action="login.html" >
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" required><br><br>
+        <input type="submit" value="Register" >
+    </form>
+    </div>
+</body>
+</html>
